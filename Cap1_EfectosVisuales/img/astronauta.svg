@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Astronauta">
+  <defs>
+    <radialGradient id="cielo" cx="50%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#2b3a7a"/>
+      <stop offset="1" stop-color="#0B0D17"/>
+    </radialGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5C26B"/>
+      <stop offset=".55" stop-color="#b9763a"/>
+      <stop offset="1" stop-color="#3a2a5c"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" fill="url(#cielo)"/>
+  <circle cx="22" cy="24" r="1.4" fill="#fff"/><circle cx="96" cy="18" r="1" fill="#fff"/>
+  <circle cx="104" cy="52" r="1.2" fill="#D0D6F9"/><circle cx="14" cy="64" r=".9" fill="#fff"/>
+  <path d="M18 120c3-22 20-34 42-34s39 12 42 34z" fill="#E8EAF6"/>
+  <rect x="48" y="96" width="24" height="12" rx="3" fill="#9aa3cf"/>
+  <circle cx="60" cy="54" r="32" fill="#F4F5FB"/>
+  <circle cx="60" cy="54" r="32" fill="none" stroke="#c5cae6" stroke-width="3"/>
+  <rect x="36" y="38" width="48" height="34" rx="17" fill="url(#visor)"/>
+  <path d="M44 46c4-4 10-5 15-4" stroke="#fff" stroke-opacity=".75" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <circle cx="27" cy="56" r="5" fill="#c5cae6"/><circle cx="93" cy="56" r="5" fill="#c5cae6"/>
+</svg>
