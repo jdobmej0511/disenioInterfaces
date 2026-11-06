@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Actividad Cap1",
+			"path": "../../../Downloads/Actividad Cap1"
+		},
+		{
+			"name": "disenioInterfaces",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "disenioInterfaces"
+	}
+}

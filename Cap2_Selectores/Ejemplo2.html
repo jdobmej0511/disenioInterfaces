@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            font-family: sans-serif;
+            border: 1px solid #666;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px;
+            transition: all 0.5s;
+        }
+
+        :target{
+            border: 2px solid #888;
+            width: 310px;
+            height: 310px;
+            box-shadow: 0 0 10px #333;
+        }
+
+        .estilo-enlace{
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="primero">Primero</div>
+    <div id="segundo">Segungo</div>
+    <div id="tercero">Tercero</div>
+
+    <a href="#primero" class="estilo-enlace">Primero</a>
+    <a href="#segundo" class="estilo-enlace">Segundo</a>
+    <a href="#tercero" class="estilo-enlace">Tercero</a>
+</body>
+</html>
