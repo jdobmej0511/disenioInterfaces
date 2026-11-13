@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root{
+            --primary-color: rgb(71, 71, 254);
+            --success-color: rgb(11, 181, 11);
+            --error-color: rgb(221, 28, 28);
+            
+            
+        }
+        body{
+            background-color: #f0eeee;
+            align-content: center;
+            text-align: center;
+            height: 100vh;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .form{
+            text-align:left;
+            max-width: 450px;
+            margin: auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .form_group{
+            margin: 15px;
+            position: relative;
+            
+        }
+        .form_label{
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.8rem;
+            color: #888;
+
+        }
+        .form_input{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #888;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+         /* Estilo del botón */
+        .form_button {
+            display: inline-block;
+            width: 104%;
+            padding: 10px;
+            border: none;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: var(--font-size);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+
+
+
+
+        .form_Flabel{
+            position: absolute;            
+            top:10px;
+            left: 10px;
+            transition: all 0.3s ;
+            background-color: #ffffff;
+
+
+        }
+
+        input:focus + label, input:not(:placeholder-shown) + label{
+            top:-10px;
+            padding: 0 6px;
+
+
+        }
+      
+        
+      
+
+    </style>
+</head>
+<body>
+    <h2>Pseudoclases de formularios</h2>
+    <form class="form" action="" method="post">
+
+        <div class="form_group">
+            <label for="username" class="form_label"> Nombre de usuario</label>
+            <input required  class="form_input" type="text" name="username" id="username" placeholder="Nombre de usuario ">
+           
+        </div>
+        <div class="form_group">
+           
+            <input required  pattern="^([0-9]{8}[A-Z])|([XYZ][0-9]{7}[A-Z])$" class="form_input" type="text" name="dni" id="dni" placeholder=" ">
+            <label for="dni" class="form_Flabel form_label"> DNI</label>
+        </div>
+
+
+        <div class="form_group">
+            <label for="input_disable" class="form_label"> Disable</label>
+            <input disabled class="form_input" type="text" name="input_disable" id="username" placeholder="Introduce tu nombre">
+        </div>
+        <div class="form_group">
+            <label for="email" class="form_label"> Email</label>
+            <input required  class="form_input" type="email" name="email" id="email" placeholder="Email">
+           
+        </div>
+
+
+
+        <button type="submit" class="form_button">Enviar</button>
+
+       
+        
+
+    </form>
+    
+</body>
+</html>

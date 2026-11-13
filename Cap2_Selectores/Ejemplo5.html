@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            text-align: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* #container h1, #container h2, #container h3, #container p{
+            font-family: sans-serif;
+            color: rgb(53, 50, 50);
+        } */
+        #container :is(p,h1,h2,h3){
+            font-family: sans-serif;
+            color: rgb(53, 50, 50);
+        }
+        #container :not(p){
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Cabecera</h1>
+        <h2>Subcabecera</h2>
+        <p>Párrafo</p>
+        <h3>Otra Subcabecera</h3>
+        <p>Párrafo</p>
+    </div>
+</body>
+</html>
